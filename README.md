@@ -1,9 +1,7 @@
 As everybody knows, react native and links are not friends. But this library is friends with both.
 
-This library is a simple function that will generate the right configurations for `metro.config.js`.
+This library is a simple function that will generate the right configurations for `metro.config.js`
 in order to give to react native a reason to like links in a yarn workspaces world.
-
-I came across with a problem where my
 
 __Install__
 
