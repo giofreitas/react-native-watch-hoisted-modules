@@ -6,8 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giofreitas/react-native-watch-hoisted-modules.git"
+  },
+  "keywords": [
+    "react-native",
+    "hoisted",
+    "watch"
+  ],
+  "author": "Gio",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giofreitas/react-native-watch-hoisted-modules/issues"
+  },
+  "homepage": "https://github.com/giofreitas/react-native-watch-hoisted-modules#readme",
   "devDependencies": {
     "glob": "^7.1.6"
   }
