@@ -56,7 +56,7 @@ What this function does it simply looks for all linked packages and their depend
 We just need to wrap the current configurations with this function:
 ```
 const watchHoistedModules = require("react-native-watch-hoisted-modules");
-module.exports = watchHoistedModules({
+module.exports = watchHoistedModules(__dirname, {
     ...
 })
 ```
