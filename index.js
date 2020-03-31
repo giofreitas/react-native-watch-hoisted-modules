@@ -63,8 +63,8 @@ module.exports = function(dirname, config = {}){
     // clone config
     config = {...config}
     // add extra node modules
-    config.resolve = config.resolve || {};
-    config.resolve.extraNodeModules = { ...(config.resolve.extraNodeModules || {}), ...extraNodeModules};
+    config.resolver = config.resolver || {};
+    config.resolver.extraNodeModules = { ...(config.resolver.extraNodeModules || {}), ...extraNodeModules};
     // append watch folders
     config.watchFolders = [...(config.watchFolders || []), ...Object.values(extraNodeModules)];
     return config;
