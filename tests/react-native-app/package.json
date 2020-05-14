@@ -1,0 +1,10 @@
+{
+  "name": "@doodles/react-native-app",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+  },
+  "dependencies": {
+    "@doodles/common": "1.0.0"
+  }
+}
