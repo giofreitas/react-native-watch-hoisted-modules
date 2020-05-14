@@ -65,6 +65,3 @@ ___
 I don't know if this is a good approach but let's face it, React Native and links are not a good approach at the first place.
 
 This works for my project so I will stick with this hack.
-
-Also, this function assumes we're using the conventional directory structure for yarn workspaces, that is, it will look 
-for a `package.json` two levels above the RN project folder to get workspaces configuration.
