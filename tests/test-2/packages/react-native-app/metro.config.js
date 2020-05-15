@@ -4,5 +4,5 @@
  *
  * @format
  */
-const watchHoistedModules = require("../../index");
+const watchHoistedModules = require("../../../../index");
 module.exports = watchHoistedModules(__dirname);

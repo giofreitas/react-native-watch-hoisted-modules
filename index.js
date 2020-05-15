@@ -26,6 +26,7 @@ module.exports = function(dirname, config = {}){
     return config;
   // lets start looking on each workspace folder
   const extraNodeModules = {};
+  const watchFolders = [];
   workspacePackageJson.workspaces.forEach(workspace => {
     const packages = path.resolve(dirname, ancestors, workspace);
     const directories = glob.sync(packages, {});
@@ -53,6 +54,7 @@ module.exports = function(dirname, config = {}){
       if (!reactNativePackageJson.dependencies.hasOwnProperty(packageJson.name))
         return;
       extraNodeModules[packageJson.name] = directory;
+      watchFolders.push(directory);
       // bail if this package does not have dependencies
       if (!packageJson.dependencies) {
         return;
@@ -83,6 +85,6 @@ module.exports = function(dirname, config = {}){
   config.resolver = config.resolver || {};
   config.resolver.extraNodeModules = { ...(config.resolver.extraNodeModules || {}), ...extraNodeModules};
   // append watch folders
-  config.watchFolders = [...(config.watchFolders || []), ...Object.values(extraNodeModules)];
+  config.watchFolders = [...(config.watchFolders || []), ...watchFolders];
   return config;
 }

@@ -1,0 +1,8 @@
+{
+  "name": "@doodles/common",
+  "version": "1.0.0",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "inversify": "^5.0.1"
+  }
+}
